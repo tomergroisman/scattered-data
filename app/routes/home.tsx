@@ -1,13 +1,10 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { MeaninglessComponentName } from "~/pages/TheThing";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: "Scattered Data" }];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <MeaninglessComponentName />;
 }
